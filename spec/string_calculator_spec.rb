@@ -19,4 +19,9 @@ RSpec.describe StringCalculator do
   it "handles newlines between numbers" do
     expect(calc.add("1\n2,3")).to eq(6)
   end
+
+  it "raises an error if negative numbers are present" do
+    expect { calc.add("1,-2,3,-4") }
+      .to raise_error("negative numbers not allowed -2,-4")
+  end
 end

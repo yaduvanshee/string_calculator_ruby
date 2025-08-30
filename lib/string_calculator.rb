@@ -4,6 +4,11 @@ class StringCalculator
   
     delimiter = /,|\n/
     parts = numbers.split(delimiter)
-    parts.map(&:to_i).sum
+    parts.map!(&:to_i)
+
+    negatives = parts.select { |n| n < 0 }
+    raise "negative numbers not allowed #{negatives.join(',')}" if negatives.any?
+
+    parts.sum
   end
 end
