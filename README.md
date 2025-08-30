@@ -21,4 +21,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/yaduvanshee/string_calculator_ruby.git
 cd string_calculator_ruby
+
+bundle exec rspec
 ```
