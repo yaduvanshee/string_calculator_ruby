@@ -14,7 +14,7 @@ The goal of this exercise is to demonstrate Test-Driven Development (TDD) practi
 
 ---
 
-## 🚀 Setup
+## Setup
 
 Clone the repository:
 
